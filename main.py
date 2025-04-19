@@ -75,6 +75,7 @@ async def handle_message(message: types.Message):
 
 # Запуск
 async def main():
+    logger.info("Starting bot...")  # Вставили сюда лог перед стартом
     await dp.start_polling(bot)
 
 if __name__ == "__main__":
